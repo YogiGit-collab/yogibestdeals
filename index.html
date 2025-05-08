@@ -1,83 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yogi Best Deals</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 1rem;
-    }
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      margin: 1rem;
-      width: 300px;
-      padding: 1rem;
-      box-sizing: border-box;
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card img {
-      max-width: 100%;
-      border-radius: 5px;
-    }
-    .card h3 {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-    }
-    .card p {
-      font-size: 0.9rem;
-      color: #555;
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      background-color: #0073e6;
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Yogi Best Deals</h1>
-    <p>Top handpicked affiliate product deals for you!</p>
-  </header>
-
-  <div class="container">
-    <!-- Product Card Example -->
-    <div class="card">
-      <img src="https://m.media-amazon.com/images/I/51SKchiKLQL._SX679_.jpg" />
-      <h3>Symphony Diet 12T Personal Tower Air Cooler</h3>
-      <p>Symphony Diet 12T Personal Tower Air Cooler for Home with Honeycomb Pad, Powerful Blower, i-Pure Technology and Low Power Consumption (12L, White.</p>
-      <a href="https://amzn.to/4kdTwKz" target="_blank">Buy Now</a>
-    </div>
-  </div>
-</body>
-</html>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -120,6 +40,11 @@
       justify-content: center;
       padding: 2rem;
     }
+    .container h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
     .card {
       background-color: white;
       border-radius: 10px;
@@ -160,9 +85,7 @@
       background-color: #333;
       color: white;
       padding: 1rem;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -170,41 +93,43 @@
 
   <header>
     <h1>Yogi Best Deals</h1>
-    <p>Top Handpicked Affiliate Product Deals</p>
+    <p>Top handpicked affiliate product deals for you!</p>
   </header>
 
   <div class="categories">
-    <a href="#Electronincs" class="category">Air Coolers </a>
-    <a href="#Kids" class="category">Kids Clothing</a>
-    <a href="#Men Clothing" class="category">Men Clothing </a>
+    <a href="#aircoolers" class="category">Air Coolers</a>
+    <a href="#kids" class="category">Kids Clothing</a>
+    <a href="#men" class="category">Men Clothing</a>
   </div>
 
   <div id="aircoolers" class="container">
     <h2>Air Coolers</h2>
     <div class="card">
-      <img src="https://m.media-amazon.com/images/I/51SKchiKLQL._SX679_.jpg" alt="Symphony Diet 12T Personal Tower Air Cooler" />
+      <img src="https://m.media-amazon.com/images/I/51SKchiKLQL._SX679_.jpg" alt="Symphony Diet 12T" />
       <h3>Symphony Diet 12T Personal Tower Air Cooler</h3>
-      <p>Symphony Diet 12T Personal Tower Air Cooler for Home with Honeycomb Pad, Powerful Blower, i-Pure Technology, and Low Power Consumption (12L, White)</p>
+      <p>With Honeycomb Pad, Powerful Blower, i-Pure Tech, and Low Power Use (12L, White)</p>
       <a href="https://amzn.to/4kdTwKz" target="_blank">Buy Now</a>
     </div>
-    <!-- Add more products here -->
   </div>
 
-  <div id="fans" class="container">
-    <h2>Fans</h2>
-    <!-- Example Product Card -->
+  <div id="kids" class="container">
+    <h2>Kids Clothing</h2>
     <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Ceiling Fan" />
-      <h3>Cool Breeze Ceiling Fan</h3>
-      <p>High-performance ceiling fan with low power consumption and quiet operation.</p>
-      <a href="https://amzn.to/xyz" target="_blank">Buy Now</a>
+      <img src="https://via.placeholder.com/300x200" alt="Kids T-Shirt" />
+      <h3>Cool Summer T-Shirt for Kids</h3>
+      <p>Comfortable, breathable fabric – perfect for summer days.</p>
+      <a href="https://amzn.to/example1" target="_blank">Buy Now</a>
     </div>
-    <!-- Add more products here -->
   </div>
 
-  <div id="other" class="container">
-    <h2>Other Products</h2>
-    <!-- Add more products here -->
+  <div id="men" class="container">
+    <h2>Men Clothing</h2>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Men's Shirt" />
+      <h3>Men's Casual Shirt</h3>
+      <p>Stylish slim-fit shirt for everyday wear. Multiple colors available.</p>
+      <a href="https://amzn.to/example2" target="_blank">Buy Now</a>
+    </div>
   </div>
 
   <footer>
